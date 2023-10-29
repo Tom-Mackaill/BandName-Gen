@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+<body>
+    <main>
+        
+        <div class="container">
+           <form action="/" method="post" id="myForm">
+            <button type="submit" form="myForm">Get Band Name..</button>
+           </form>
+            <%if(locals.bandName){%>
+                <h3><%= bandName %></h3>
+           <% } else { %>
+                <h3>Hello</h3>
+            <%}%>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<%- include("footer") -%>
+
+
+
+
+
+
+
